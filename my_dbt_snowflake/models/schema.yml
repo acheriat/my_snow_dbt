@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: work
+    database: ACH_TEST_REP
+    schema: WORK
+    tables:
+      - name: customers
+      - name: orders
+
+models:
+  - name: customer_metrics
+    description: "Aggregated metrics per customer"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null

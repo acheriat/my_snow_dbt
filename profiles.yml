@@ -1,0 +1,19 @@
+my_profile:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: accountadmin
+      database: ACH_TEST_REP
+      schema: WORK
+      warehouse: my_dbt_wh
+    prod:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: accountadmin
+      database: ACH_TEST_REP
+      schema: WORK
+      warehouse: my_dbt_wh
